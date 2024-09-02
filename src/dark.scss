@@ -1,12 +1,31 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-$bg-dark-body-01: #343a40;
+$bg-dark-body-01: #252a2e;
 $bg-dark-body-02: #3d434a;
 $bg-dark-body-03: #d1d1d1;
 
 $txt-dark-body-01: #c4c8d4;
-$txt-dark-body-02: #424242;
+$txt-dark-body-02: #303030;
+$txt-bright: #B0B6BA;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.main-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
 
 @media (prefers-color-scheme: dark) {
   .main-body {
@@ -39,5 +58,17 @@ $txt-dark-body-02: #424242;
       color: $txt-dark-body-02;
     }
   }
-}
 
+  .form-text {
+    color: $txt-bright;
+  }
+
+  .custom-link {
+    color: #c20000;
+    text-decoration: none;
+  }
+
+  .custom-link:hover {
+    color: #ff0000;
+  }
+}
